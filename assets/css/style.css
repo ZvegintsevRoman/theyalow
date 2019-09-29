@@ -613,6 +613,7 @@
     height: 235px;
   }
   .twitter-message-item {
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -621,11 +622,10 @@
     width: 284px;
     height: 42px;
     border-radius: 12px;
-    position: relative;
   }
   .twitter-message-item::after {
-    content: "";
     position: absolute;
+    content: "";
     left: -9px;
     top: 40%;
     width: 0;
@@ -648,7 +648,7 @@
   }
   .twitter-message-item > p {
     margin-left: 19px;
-    font-family: "Arial";
+    font-family: "Arial", sans-serif;
     font-size: 13px;
     color: #8f8e8e;
   }
@@ -672,7 +672,7 @@
   }
   .twit-submit {
     flex-grow: 1;
-    font-family: "Arial";
+    font-family: "Arial", sans-serif;
     font-size: 15px;
     color: #ffffff;
     background: #E09F1D;
