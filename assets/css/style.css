@@ -410,3 +410,38 @@
 }
 
 /* Footer */
+.footer-section {
+  display: flex;
+  align-items: center;
+  height: 64px;
+  background-color: #4C4C4C;
+}
+.footer-logo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.footer-logo-picture {
+  position: relative;
+  width: 54px;
+  height: 54px;
+  margin: 0;
+}
+.footer-logo-picture > img {
+  width: 54px;
+  height: 54px;  
+}
+.foot-pic-1 {
+  position: absolute;
+  z-index: 2;
+}
+.foot-pic-2 {
+  z-index: 4;
+}
+.footer-logo > h5 {
+  margin: 0;
+  font-family: "Lucida Sans", sans-serif;
+  font-size: 29px;
+  font-style: italic;
+  color: #ffffff;
+}
