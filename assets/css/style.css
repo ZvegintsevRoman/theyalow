@@ -1,9 +1,9 @@
 @font-face {
-    font-family: "Segoe WP";
-    src: url("../fonts/SegoeWP.ttf");
-    src: url("../fonts/segoe-wp-light.ttf");
-    font-weight: normal;
-    font-weight: lighter;
+  font-family: "Segoe WP";
+  src: url("../fonts/SegoeWP.ttf");
+  src: url("../fonts/segoe-wp-light.ttf");
+  font-weight: normal;
+  font-weight: lighter;
 }
 @font-face {
   font-family: "Asap";
@@ -22,3 +22,159 @@
   font-family: "Open Sans";
   src: url("../fonts/OpenSans-Regular.ttf");
 }
+
+/* General */
+* {
+  margin: 0;
+  padding: 0;
+}
+.outer-wrapper {
+  max-width: 1300px;
+  min-width: 1299px;
+  margin: 0 auto; 
+}
+.inner-wrapper {
+  max-width: 1020px;
+  min-width: 1019px;
+  margin: 0 auto;
+}
+
+/* Side buttons */
+.next-buttons {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  width: 1300px;
+  top: 300px;
+}
+.next-buttons > a {
+  height: 56px;
+  width: 32px;
+  font-size: 40px;
+  text-decoration: none;
+  text-align: center;
+  color: #fff;
+  background: #F5C506;
+}
+.next-buttons > a:hover {
+  background: #37ADBF;
+  color: #F5C506;
+}
+
+/* Header  */
+.header-section {
+  height: 566px;
+  background-image: url("../img/head-section-bg.png"); 
+  box-shadow: inset 0px -3px 3px 0px rgba(0,0,0,0.75);
+}
+.header {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 56px;
+}
+
+/* Logo  */
+.logo-section {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 28px;
+}
+.logo-picture {
+  position: relative;
+  width: 83px;
+  height: 83px;
+}
+.logo-picture > img {
+  width: 83px;
+  height: 83px; 
+}
+.logo-pic-1 {
+  position: absolute;
+  z-index: 2;
+}
+.logo-pic-2 {
+  z-index: 4;
+}
+.logo-section > h1 {
+  margin: 9px 0 0 0px;
+  font-family: "Lucida Sans", sans-serif;
+  font-size: 41px;
+  font-style: italic;
+  color: #ffffff; 
+}
+
+/* Navigation */
+.nav-bar {
+  align-self: flex-end;
+  width: 453px;
+  height: 41px;
+  background-color: #F5C506; 
+  box-shadow: -4px -5px 0px 0px rgba(246,197,6,0.27), -8px -8px 0px 0px rgba(246,197,6,0.27);
+}
+.nav-bar > ul {
+  display: flex;
+  height: 41px;
+  list-style: none; 
+}
+.nav-bar > ul > li {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.nav-bar > ul > li:nth-of-type(2) {
+  border-right: 1px solid #9b7d08;
+  border-left: 1px solid #9b7d08;
+}
+.nav-bar > ul > li:hover {
+  background: #fff;
+}
+.nav-bar ul li > img {
+  margin-right: 8px;
+}
+.nav-bar ul li > a {
+  font-family: "Segoe WP", sans-serif;
+  font-size: 17px;
+  text-decoration: none;
+  color: #9b7d08;
+}
+
+/* Video section */
+.video-section {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  margin: 0 10px 0;
+}
+.video-block {
+  width: 549px;
+  height: 327px;
+}
+.video-block > video {
+  width: 100%;
+  height: 100%;
+}
+.video-text {
+  width: 451px;
+  padding-bottom: 24px;
+  padding-left: 12px;
+}
+.video-text > h2 {
+  font-family: "Asap", sans-serif;
+  font-weight: 400;
+  font-size: 63px;
+  text-align: center;
+  letter-spacing: 1px;
+}
+.video-text > h2:nth-of-type(1)  {
+  color: #f5c506;
+}
+.video-text > h2:nth-of-type(2) {
+  color: #fff;
+}
+
+/* Options */
