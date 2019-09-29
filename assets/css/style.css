@@ -212,7 +212,7 @@
   color: #000000;
 }
 
-/* about */
+/* About */
 .about-section {
   height: 508px;
   background-image: url("../img/about-section-bg.png"); 
@@ -222,7 +222,7 @@
   width: 100%;
 }
 .about > h3 {
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-weight: 400;
   font-size: 37px;
   line-height: 110px;
@@ -246,7 +246,7 @@
 }
 .about-text > p {
   padding-left: 15px;
-  font-family: "Segoe WP";
+  font-family: "Segoe WP", sans-serif;
   font-weight: 300;
   font-size: 29px;
   word-break: break-word;
@@ -304,7 +304,7 @@
   margin: 0;
 }
 .about-date :first-child {
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", sans-serif;
   font-weight: bold;
   font-size: 51px;
   line-height: 51px;
@@ -312,7 +312,7 @@
   color: #ffffff;
 }
 .about-date :last-child {
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", sans-serif;
   font-size: 21px;
   line-height: 21px;
   color: #B26529;
@@ -338,3 +338,75 @@
   cursor: pointer;
   -webkit-appearance: none;
 }
+
+/*  Services */
+.services-section {
+  height: 497px;
+  background-image: url("../img/services-section-bg.png"); 
+  box-shadow: inset 0px -3px 3px 0px rgba(0,0,0,0.75);
+}
+.services > h4 {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  font-size: 43px;
+  line-height: 136px; 
+  text-align: center; 
+  color: #f5c506;
+}
+.services-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-content: flex-end;
+  width: 100%;
+}
+.services-pictures-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 540px;
+  height: 215px;
+  margin-left: 18px;
+  overflow: visible;  
+}
+.services-desktop {
+  height: 215px;
+}
+.services-desktop-caption {
+  position: relative;
+  z-index: 2;
+}
+.services-caption {
+  position: absolute;
+  top: -46px;
+  left: -21px;
+  z-index: 4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 116px;
+  height: 116px;
+  font-family: "PT Sans Narrow", sans-serif;
+  font-weight: 700;
+  font-size: 19px;
+  background-color: #F5C506;
+  color: #ffffff;
+  border-radius: 50%;
+}
+.services-list {
+  width: 362px;
+  margin-top: 40px;
+}
+.services-list > ul > li {
+  height: 56px;
+  padding-left: 14px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 24px;
+  word-break: break-all;
+  color: #a9a9a7;
+  list-style-image: url("../img/list-ellipse-marker.svg");
+  list-style-position: outside;
+}
+
+/* Footer */
